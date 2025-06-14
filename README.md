@@ -14,7 +14,7 @@ It features a lightweight XFCE desktop environment and is optimized for fast boo
 
 ```bash
 sudo apt install live-build
-git clone https://github.com/yourname/purebit.git
-cd purebit
+git clone https://github.com/yucchannel/Purebit-LInux.git
+cd Purebit
 sudo lb config
 sudo lb build
