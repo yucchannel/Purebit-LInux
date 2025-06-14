@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Purebit Linux</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+      color: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2rem;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 0.2rem;
+    }
+    .codename {
+      font-size: 1.2rem;
+      font-style: italic;
+      color: #ccc;
+    }
+    .desc {
+      max-width: 600px;
+      text-align: center;
+      margin: 1rem 0 2rem;
+      line-height: 1.6;
+    }
+    .download-btn {
+      background: #00bcd4;
+      color: white;
+      padding: 1rem 2rem;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .download-btn:hover {
+      background: #0097a7;
+    }
+    footer {
+      margin-top: 3rem;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+    select {
+      margin-top: 1rem;
+      padding: 0.5rem;
+      border-radius: 6px;
+      border: none;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Purebit Linux</h1>
+    <div class="codename" id="codename">Codename: Nova</div>
+  </header>
+
+  <div class="desc">
+    Purebit is a fast, lightweight, and elegant Linux distribution based on Debian. Designed for developers and beginners alike, it delivers speed, flexibility, and a minimal interface that adapts to your needs.
+  </div>
+
+  <button class="download-btn">Download (Coming Soon)</button>
+
+  <div>
+    <label for="version">Select Version:</label>
+    <select id="version" onchange="changeCodename()">
+      <option value="Nova">1.0 "Nova"</option>
+    </select>
+  </div>
+
+  <footer>
+    &copy; 2025 Purebit Project. All rights reserved.
+  </footer>
+
+  <script>
+    function changeCodename() {
+      const select = document.getElementById('version');
+      const codename = document.getElementById('codename');
+      const name = select.value;
+      codename.textContent = `Codename: ${name}`;
+    }
+  </script>
+
+</body>
+</html>
